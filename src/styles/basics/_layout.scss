@@ -1,0 +1,57 @@
+// Container
+
+.container {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  @include for-normal-layout {
+    max-width: $break-narrow;
+  }
+  @include for-wide-layout {
+    max-width: $break-normal;
+  }
+}
+
+// Grids
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+
+  > * {
+    background-color: $clr1;
+    transition: all 0.3s;
+    color: $clr5;
+    &:hover {
+      background-color: #fff;
+      color: $clr1;
+      // img {
+      //     filter: grayscale(0);
+      // }
+    }
+  }
+
+  img {
+    transition: filter 0.3s;
+    mix-blend-mode: multiply;
+    // filter: grayscale(1);
+  }
+
+  .cat-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: GreatVibes;
+    font-size: rem(76px);
+    text-transform: capitalize;
+  }
+}
+
+footer {
+  background-color: $clr4;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 60px;
+}

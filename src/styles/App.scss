@@ -1,3 +1,18 @@
+// SETUP
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/functions';
+
+// BASICS
+@import 'basics/helpers';
+@import 'basics/base';
+@import 'basics/layout';
+
+@import './views/Home';
+@import './views/StatisticPage';
+@import './views/ContactDetails';
+@import './components/ContactList';
+@import './components/ContactPreview';
 .App {
   text-align: center;
 }
@@ -15,11 +30,10 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  height: 60px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
 }

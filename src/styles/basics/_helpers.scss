@@ -1,0 +1,90 @@
+
+// Aspect ratios
+
+.ratio-16-9 { @include aspect-ratio(100, 56); }
+
+.ratio-square { @include aspect-ratio(100, 100); }
+
+.ratio-card { @include aspect-ratio(100, 80); }
+
+.ratio-poster { @include aspect-ratio(100, 150); }
+
+
+// Flex Helpers
+.bottom-20{
+    margin-bottom: 20px;
+}
+
+.bottom-5{
+    margin-bottom: 5px;
+}
+
+.bottom-10{
+    margin-bottom: 10px;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+.grow {
+    flex-grow: 2;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.flex .full {
+    flex: 1;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+.align-self-center{
+    align-self: center;
+}
+
+.justify-self-center{
+    justify-content: center;
+}
+
+.flex-start{
+    justify-content: flex-start;
+}
